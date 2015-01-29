@@ -1,0 +1,185 @@
+header {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: -1px;
+    left: 0px;
+    //margin-top: -0.5em;
+    background-image: url('../resources/headerbackground.png'), -webkit-linear-gradient(#9f5628, #5d2f17) !important;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    /* This removes the underline from links */
+}
+figure img {
+    border-radius: 10px;
+    text-align: center;
+}
+header h1 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+body {
+    background-image: url('../resources/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: rambla;
+    padding-top: 30px;
+}
+.nav-b {} ul {
+    position: fixed;
+    text-align: left;
+    //bottom: -13px;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    background-image: url('../resources/headerbackground.png'), -webkit-linear-gradient(#9f5628, #5d2f17) !important;
+    background-size: cover;
+    z-index: 2;
+    display: flex;
+    //align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+    width: 100%;
+}
+li {
+    display: inline-block;
+    margin: -5px -5px;
+    width: 25%;
+    align-items: center;
+    /* Puts a gap between the buttons */
+    
+    padding: 0px 10px 0px 10px;
+}
+li a {
+    /* need to add display as block to be able to set width */
+    
+    display: block;
+    //width: 50px;
+    height: 50px;
+    width: 100%;
+    //background: rgba(240, 240, 240, 1);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.9);
+    -webkit-text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    /* ◦top, right, bottom, left */
+    
+    //padding: 5px 5px 5px 5px;
+    float: left;
+    clear: none;
+    vertical-align: center;
+}
+.a-button {
+    /* need to add display as block to be able to set width */
+    
+    display: block;
+    //position: absolute;
+    width: 50px;
+    height: 20px;
+    background: rgba(240, 240, 240, 1);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.9);
+    -webkit-text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    /* ◦top, right, bottom, left */
+    
+    padding: 5px 5px 5px 5px;
+    float: left;
+    clear: none;
+}
+.a-icon {
+    //right: 50%;
+    width: 22px;
+    height: 22px;
+    //background-color: rgba(0,0,0,.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 1em;
+    margin-left: 45%;
+}
+.a-icon-img {
+    width: 14px;
+    height: 14px;
+    width: 74%;
+    height: 74%;
+    position: relative;
+    //right:50%;
+    top: 2px;
+}
+.searchdiv {
+    text-align: center;
+}
+@media screen and (max-width: 400px) {
+    .nav-b {
+        position: fixed;
+        text-align: left;
+        bottom: 20px;
+        //top:39;
+        width: 100%;
+        height: 40px;
+        left: 0px;
+        background-image: url('../resources/headerbackground.png'), -webkit-linear-gradient(#9f5628, #5d2f17) !important;
+        z-index: 2;
+        display: flex;
+    }
+}
+@media screen and (min-width: 401px) {
+    .nav-b {
+        position: fixed;
+        text-align: left;
+        //bottom:20px;
+        top: 39;
+        width: 100%;
+        height: 40px;
+        left: 0px;
+        background-image: url('../resources/headerbackground.png'), -webkit-linear-gradient(#9f5628, #5d2f17) !important;
+        z-index: 2;
+        display: flex;
+    }
+    li a {
+        display: flex;
+        height: 23px;
+        text-align: left;
+    }
+    ul {
+        /*Since we're having the icon and text go side by side, it makes sense to shrink the button they occupy */
+        height: 23px;
+    }
+    .a-icon {
+        margin-left: 0%;
+    }
+}
+.center {
+    /*Remember, height/width need to be set for this to work*/
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+span.error {
+    //float: left;
+    color: red;
+    font-size: 85%;
+    padding-top: 0.5em;
+    vertical-align: top;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="us">
+<style>
+label {
+    display: inline-block;
+    width: 100px;
+    float: left;
+}
+form br {
+    clear: both;
+}
+</style>
+
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=panoramio"></script>
+    <script src="jquery.js"></script>
+    <script src="localdb.js"></script>
+    <script type="text/javascript" src="jquery-map/jquery.ui.map.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+    <link href="css/common.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Friends With Beer</title>
+    <script type="text/javascript" src="localdb.js"></script>
+    <script src="jquery.validate.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <script src="js/contactform.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Friends With Beer</h1>
+    </header>
+    <div id="formdiv" class="center" style="width:366px">
+        <form id="contactform">
+
+            <label>First Name</label>
+            <input type="text" placeholder="First Name" name="firstName" id="firstName"></input>
+            <br>
+            <label>Last Name</label>
+            <input placeholder="Last Name" type="text" name="lastName" id="lastName">
+            <br>
+            <label>Street Address</label>
+            <input placeholder="1400 16th Street NW" type="text" name="address" id="address">
+            <br>
+            <label>Zip Code</label>
+            <input placeholder="20036" type="number" name="zipcode" id="zipcode">
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="name@figleaf.com" name="email" id="email">
+            <br>
+            <label>Phone</label>
+            <input placeholder="202-797-7711" type="tel" name="phone" id="phone">
+            <br>
+            <label>Beer</label>
+            <select style="width:128px" name="beerId" id="beerId">
+                <option>Select a Beer</option>
+
+            </select>
+            <br>
+            <label>Latitude</label>
+            <input disabled placeholder="Automatically updates" type="text" name="lat" id="lat">
+            <br>
+            <label>Latitude</label>
+            <input disabled placeholder="Based on address input" type="text" name="lng" id="lng">
+        </form>
+        <br>
+        <div id="buttons" style="position:relative; left:103px">
+            <button id="buttonsubmit">Submit</button>
+            <button id="buttonback" location="friends.html">Back</button>
+        </div>
+    </div>
+</body>
+
+</html>

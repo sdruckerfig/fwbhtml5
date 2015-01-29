@@ -1,0 +1,131 @@
+<html>
+	<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>   
+	<meta charset="utf-8">
+	<title>Friends</title>
+	<script src="jquery.js"></script>
+	<script src="localdb.js"></script>
+	<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet"> 
+  <script src="js/index.js"></script>
+	<style>
+	  p {
+padding: 10px;
+position: relative;
+	  }
+      figure {
+  display: inline-block;
+  padding: 10px 10px 5px 10px;
+  background-color: white;
+  margin:  10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  position:absolute;
+   top: 100px; 
+   left: 60px;
+ 
+ }
+
+ @-webkit-keyframes bringforward {
+  to {
+    
+    -webkit-transform: rotate(0deg);
+    
+  }
+ }
+ 
+ figure:hover {
+   z-index: 2;
+   box-shadow: 0px 0px 20px black;
+   -webkit-box-shadow: 0px 0px 20px black;
+   -webkit-animation-name: bringforward;
+   -webkit-animation-duration: 5s;
+ } 
+ 
+ figure:nth-of-type(1) {
+   
+  -o-transform: scale(0.6) translate(100px,0px) rotate(-10deg);
+  -webkit-transform: scale(0.6) translate(100px, 0px) rotate(-10deg);
+  transform: scale(0.6) translate(100px, 0px) rotate(-20deg);
+        
+ }
+
+ figure:nth-of-type(2) {
+  -o-transform: scale(0.6) translate(180px, 60px) rotate(10deg);
+  -webkit-transform: scale(0.6) translate(180px, 60px) rotate(10deg);
+  transform: scale(0.6) translate(180px, 60px) rotate(10deg);
+ }
+
+ figure:nth-of-type(3) {
+  -o-transform: scale(0.6) translate(220px, 10px) rotate(35deg);
+  -webkit-transform: scale(0.6) translate(220px, 10px) rotate(35deg);
+  transform: scale(0.6) translate(220px, 10px) rotate(30deg);
+ }
+
+  figure:nth-of-type(4) {
+  -o-transform: scale(0.6) translate(-90px, 30px) rotate(-20deg);
+  -webkit-transform: scale(0.6) translate(-90px, 30px) rotate(-20deg);
+  transform: scale(0.6) translate(-90px, 30px) rotate(-20deg);
+  }
+  
+  figure:nth-of-type(5) {
+  -o-transform: scale(0.6) translate(-110px, -100px) rotate(-4deg);
+  -webkit-transform: scale(0.6) translate(-110px, -100px) rotate(-4deg);
+  transform: scale(0.6) translate(-110px, -100px) rotate(-4deg);
+  }
+ 
+  figure:nth-of-type(6) {
+  -o-transform: scale(0.6) translate(-200px, -100px) rotate(10deg);
+  -webkit-transform: scale(0.6) translate(-200px, -100px) rotate(10deg);
+  transform: scale(0.6) translate(-200px, -100px) rotate(10deg);
+  }
+
+	</style>
+
+<body>
+<header>
+  <h1>Friends With Beer</h1>
+</header>
+<br>
+<br>
+
+<p style="display:block;">In these uncertain economic times you need to keep your friends close, and your beer even closer.</p>
+<div id="figures" style="position:relative; bottom:120px">
+          <figure>
+           <img src="resources/beer.jpg">
+           <figcaption data-position="bottom">Beer: The cause and solution to all of our problems</figcaption>
+          </figure>
+
+          <figure>
+            <img src="resources/fwb2.jpg">
+          </figure>
+          <figure>
+            <img src="resources/fwb3.jpg">
+          </figure>
+          <figure>
+            <img src="resources/fwb4.jpg">
+          </figure>
+        </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      
+      <p style="">This app quickly identifies your pals who are most likely to have your favorite brew on ice. Check the traffic conditions around your friend's house, then dial or email them to let them know that you're coming over.</p>
+      <p style="">No friends? No problem! Our app contains a video of "virtual" friends drinking, so you'll never need to drink alone again!</p>
+<br><br>
+<nav id="toolbar" class="nav-b">
+<ul>
+<li>
+<a href="index.html" style="border: 1px solid yellow;"><div class="a-icon"><img class="a-icon-img" src="icons-png/home-black.png"></img></div>Home</a>
+</li>
+<li>
+<a href="beers.html"><div class="a-icon"><img class="a-icon-img" style="padding: 2px 0px 0px 0px;" src="icons-png/heart-black.png"></img></div>Beers</a>
+</li>
+<li>
+<a href="friends.html"><div class="a-icon"><img class="a-icon-img"src="icons-png/user-black.png"></img></div>Friends</a>
+</li>
+<li>
+<a href="drink.html"><div class="a-icon"><img class="a-icon-img" style="padding: 2px 0px 0px 1px;" src="icons-png/video-black.png"></img></div>Drink!</a>
+</li>
+</ul>
+</nav>
+</body>
+</html>
